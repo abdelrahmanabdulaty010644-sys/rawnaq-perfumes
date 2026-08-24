@@ -187,7 +187,7 @@
 
         .card img {
             width: 100%;
-            height: 280px;
+            height: 300px;
             object-fit: cover;
             border-radius: 12px;
             margin-bottom: 20px;
@@ -317,9 +317,9 @@
         
         <div class="grid">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=600" alt="عطر رونق العود">
-                <h3>رونق العود</h3>
-                <p>مزيج فاخر من العود الأصيل والنفحات الشرقية الساحرة.</p>
+                <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/WhatsApp%20Image%202026-08-24%20at%206.26.35%20PM%20(1).jpeg" alt="عطر رونق 1">
+                <h3>عطر رونق الملكي</h3>
+                <p>تركيبة عطرية فاخرة تجمع بين الأصالة والجاذبية.</p>
                 <div class="price">450 جنيه</div>
                 <a href="https://chat.whatsapp.com/Ett4jGXBrtl2retP8XNy4X?s=sh&p=a&ilr=0&amv=0" target="_blank" class="btn-card">
                     <i class="fa-brands fa-whatsapp"></i> اطلب عبر الواتساب
@@ -327,9 +327,9 @@
             </div>
             
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=600" alt="عطر رونق المسك">
-                <h3>رونق المسك</h3>
-                <p>عطر ناعم يمنحك شعوراً بالانتعاش والنظافة طوال اليوم.</p>
+                <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/WhatsApp%20Image%202026-08-24%20at%206.26.35%20PM.jpeg" alt="عطر رونق 2">
+                <h3>رونق العود والمسك</h3>
+                <p>مزيج ساحر ينبض بالفخامة والانتعاش طوال اليوم.</p>
                 <div class="price">380 جنيه</div>
                 <a href="https://chat.whatsapp.com/Ett4jGXBrtl2retP8XNy4X?s=sh&p=a&ilr=0&amv=0" target="_blank" class="btn-card">
                     <i class="fa-brands fa-whatsapp"></i> اطلب عبر الواتساب
@@ -337,10 +337,40 @@
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?q=80&w=600" alt="عطر رونق الفانيلا">
+                <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/WhatsApp%20Image%202026-08-24%20at%206.26.36%20PM%20(1).jpeg" alt="عطر رونق 3">
                 <h3>رونق الفانيلا والزهور</h3>
-                <p>نفحات عصرية دافئة تجمع بين الفانيلا والزهور النادرة.</p>
+                <p>نفحات دافئة ورقيقة تأسر الحواس برقتها.</p>
                 <div class="price">400 جنيه</div>
+                <a href="https://chat.whatsapp.com/Ett4jGXBrtl2retP8XNy4X?s=sh&p=a&ilr=0&amv=0" target="_blank" class="btn-card">
+                    <i class="fa-brands fa-whatsapp"></i> اطلب عبر الواتساب
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/WhatsApp%20Image%202026-08-24%20at%206.26.36%20PM%20(2).jpeg" alt="عطر رونق 4">
+                <h3>رونق المورينجا والندى</h3>
+                <p>لمسة منعشة وعصرية تعكس التميز والأناقة.</p>
+                <div class="price">420 جنيه</div>
+                <a href="https://chat.whatsapp.com/Ett4jGXBrtl2retP8XNy4X?s=sh&p=a&ilr=0&amv=0" target="_blank" class="btn-card">
+                    <i class="fa-brands fa-whatsapp"></i> اطلب عبر الواتساب
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/WhatsApp%20Image%202026-08-24%20at%206.26.36%20PM%20(3).jpeg" alt="عطر رونق 5">
+                <h3>رونق بلاك نايت</h3>
+                <p>عطر رسمي فخم مخصص للسهرات والمناسبات الخاصة.</p>
+                <div class="price">480 جنيه</div>
+                <a href="https://chat.whatsapp.com/Ett4jGXBrtl2retP8XNy4X?s=sh&p=a&ilr=0&amv=0" target="_blank" class="btn-card">
+                    <i class="fa-brands fa-whatsapp"></i> اطلب عبر الواتساب
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/WhatsApp%20Image%202026-08-24%20at%206.26.36%20PM.jpeg" alt="عطر رونق 6">
+                <h3>مجموعة رونق الخاصة</h3>
+                <p>إصدار محدود لعشاق التميز والعطور الفاخرة.</p>
+                <div class="price">500 جنيه</div>
                 <a href="https://chat.whatsapp.com/Ett4jGXBrtl2retP8XNy4X?s=sh&p=a&ilr=0&amv=0" target="_blank" class="btn-card">
                     <i class="fa-brands fa-whatsapp"></i> اطلب عبر الواتساب
                 </a>
