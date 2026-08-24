@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رونق | للعطور الفاخرة</title>
+    <style>
+        :root {
+            --primary: #c5a059;
+            --dark: #121212;
+            --light-dark: #1e1e1e;
+            --text: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(18, 18, 18, 0.95);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--primary);
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-right: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200') center/cover no-repeat;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: var(--dark);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e0b86c;
+            transform: translateY(-2px);
+        }
+
+        .products {
+            padding: 100px 5% 80px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: var(--primary);
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--light-dark);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid rgba(197, 160, 89, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 18px;
+            margin: 10px 0 15px;
+        }
+
+        footer {
+            background: var(--light-dark);
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid rgba(197, 160, 89, 0.2);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">رونق</div>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#products">المنتجات</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>رونق للعطور</h1>
+        <p>لمسات خفية تعكس حضورك الأنيق ورونقك الخاص.</p>
+        <a href="#products" class="btn">تسوق الآن</a>
+    </section>
+
+    <section id="products" class="products">
+        <h2 class="section-title">تشكيلتنا المميزة</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=600" alt="عطر رونق العود">
+                <h3>رونق العود</h3>
+                <p>مزيج فاخر من العود الأصيل والنفحات الشرقية.</p>
+                <div class="price">450 جنيه</div>
+                <a href="https://wa.me/201000000000?text=أرغب%20في%20طلب%20عطر%20رونق%20العود" target="_blank" class="btn">طلب عبر الواتساب</a>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=600" alt="عطر رونق المسك">
+                <h3>رونق المسك</h3>
+                <p>عطر ناعم يمنحك شعوراً بالانتعاش والنظافة طوال اليوم.</p>
+                <div class="price">380 جنيه</div>
+                <a href="https://wa.me/201000000000?text=أرغب%20في%20طلب%20عطر%20رونق%20المسك" target="_blank" class="btn">طلب عبر الواتساب</a>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?q=80&w=600" alt="عطر رونق زهور">
+                <h3>رونق الفانيلا والزهور</h3>
+                <p>نفحات عصرية دافئة تجمع بين الفانيلا والزهور النادرة.</p>
+                <div class="price">400 جنيه</div>
+                <a href="https://wa.me/201000000000?text=أرغب%20في%20طلب%20عطر%20رونق%20الفانيلا" target="_blank" class="btn">طلب عبر الواتساب</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>جميع الحقوق محفوظة &copy; 2026 براند رونق للعطور</p>
+    </footer>
+
+</body>
+</html>
