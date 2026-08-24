@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>رونق | للعطور الفاخرة</title>
+    <!-- Favicon / اللوجو في شريط المتصفح -->
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/Screenshot%202026-08-24%20200345.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,9 +41,9 @@
 
         /* Header & Nav */
         header {
-            background: rgba(10, 10, 10, 0.85);
+            background: rgba(10, 10, 10, 0.9);
             backdrop-filter: blur(12px);
-            padding: 18px 8%;
+            padding: 12px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -52,12 +54,26 @@
             border-bottom: 1px solid var(--border-color);
         }
 
-        .logo {
-            font-size: 30px;
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .brand-logo img {
+            height: 55px;
+            width: auto;
+            object-fit: contain;
+            border-radius: 6px;
+            filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.4));
+        }
+
+        .logo-text {
+            font-size: 26px;
             font-weight: 800;
             color: var(--primary);
-            letter-spacing: 2px;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            letter-spacing: 1.5px;
         }
 
         nav a {
@@ -72,7 +88,7 @@
             color: var(--primary);
         }
 
-        /* Hero Section with Man Spraying Perfume Background */
+        /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
@@ -80,16 +96,24 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(180deg, rgba(10,10,10,0.5) 0%, rgba(10,10,10,0.95) 100%), 
+            background: linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.95) 100%), 
                         url('https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=1600') center/cover no-repeat;
             padding: 0 20px;
         }
 
+        .hero-logo {
+            width: 140px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.5));
+        }
+
         .hero h1 {
-            font-size: 56px;
+            font-size: 52px;
             font-weight: 800;
             color: var(--primary);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             letter-spacing: 1px;
             text-shadow: 0 4px 15px rgba(0,0,0,0.8);
         }
@@ -212,8 +236,15 @@
             border-top: 1px solid var(--border-color);
         }
 
+        .footer-logo {
+            width: 90px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
         .footer-title {
-            font-size: 24px;
+            font-size: 22px;
             color: var(--primary);
             margin-bottom: 20px;
             font-weight: 700;
@@ -262,7 +293,10 @@
 <body>
 
     <header>
-        <div class="logo">رونق</div>
+        <a href="#home" class="brand-logo">
+            <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/Screenshot%202026-08-24%20200345.png" alt="لوجو رونق للعطور">
+            <span class="logo-text">رونق</span>
+        </a>
         <nav>
             <a href="#home">الرئيسية</a>
             <a href="#products">المنتجات</a>
@@ -271,6 +305,7 @@
     </header>
 
     <section id="home" class="hero">
+        <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/Screenshot%202026-08-24%20200345.png" alt="رونق للعطور" class="hero-logo">
         <h1>رونق للعطور</h1>
         <p>لمسات خفية تعكس حضورك الأنيق ورونقك الخاص.</p>
         <a href="#products" class="btn-main">اكتشف المجموعة</a>
@@ -314,6 +349,7 @@
     </section>
 
     <footer id="contact">
+        <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/Screenshot%202026-08-24%20200345.png" alt="لوجو رونق" class="footer-logo">
         <h3 class="footer-title">تابع براند رونق على منصات التواصل</h3>
         
         <div class="social-container">
