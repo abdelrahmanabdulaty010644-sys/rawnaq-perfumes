@@ -43,7 +43,7 @@
         header {
             background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(12px);
-            padding: 12px 6%;
+            padding: 12px 4%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -57,27 +57,36 @@
         .brand-logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .brand-logo img {
-            height: 50px;
+            height: 45px;
             width: auto;
             border-radius: 6px;
         }
 
         .logo-text {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 800;
             color: var(--primary);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: var(--text-light);
             text-decoration: none;
-            margin-right: 20px;
             font-weight: 500;
+            font-size: 15px;
+            white-space: nowrap;
             transition: color 0.3s;
         }
 
@@ -164,7 +173,6 @@
             padding-bottom: 8px;
         }
 
-        /* تعديل الجدول ليكون كل النص (الحجم والسعر) باللون الذهبي الواضح */
         .price-table {
             width: 100%;
             border-collapse: collapse;
@@ -186,7 +194,7 @@
             padding: 12px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             font-size: 15px;
-            color: var(--primary) !important; /* لون ذهبي ناصع لكل الخانات */
+            color: var(--primary) !important;
             font-weight: 600;
         }
 
