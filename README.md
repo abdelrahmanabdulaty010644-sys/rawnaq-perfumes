@@ -18,8 +18,8 @@
             --primary-hover: #f3e5ab;
             --bg-dark: #0a0a0a;
             --card-bg: #141414;
-            --text-light: #f8f9fa;
-            --text-muted: #a0a0a0;
+            --text-light: #ffffff;
+            --text-muted: #b0b0b0;
             --border-color: rgba(212, 175, 55, 0.25);
         }
 
@@ -170,17 +170,19 @@
         }
 
         .price-table th, .price-table td {
-            padding: 8px 12px;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            font-size: 14px;
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 15px;
+            color: #ffffff; /* تم توضيح لون النص ليشاهد بوضوح */
         }
 
         .price-table th {
-            color: var(--text-muted);
+            color: var(--primary);
+            font-weight: 700;
         }
 
         .price-highlight {
-            color: var(--primary);
+            color: var(--primary) !important;
             font-weight: 700;
         }
 
@@ -368,7 +370,7 @@
 
     <section id="home" class="hero">
         <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/Screenshot%202026-08-24%20200345.png" alt="رونق للعطور" class="hero-logo">
-        <h1>براند رونق للعطور والمسكات</h1>
+        <h1>رونق للعطور والمسكات</h1>
         <p>تشكيلة فاخرة مقسمة حسب التصنيف العطري والموسم ونوع العطر لتختار ما يناسب ذوقك ورونقك الخاص.</p>
     </section>
 
@@ -455,7 +457,7 @@
 
     <footer id="contact">
         <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/Screenshot%202026-08-24%20200345.png" alt="لوجو رونق" class="footer-logo">
-        <h3>تابع براند رونق على منصات التواصل</h3>
+        <h3>تابع رونق على منصات التواصل</h3>
         
         <div class="social-container">
             <a href="https://www.facebook.com/share/1bGxj2MaW6/" target="_blank" class="social-btn facebook"><i class="fa-brands fa-facebook-f"></i> فيسبوك</a>
@@ -464,7 +466,7 @@
             <a href="https://chat.whatsapp.com/Ett4jGXBrtl2retP8XNy4X?s=sh&p=a&ilr=0&amv=0" target="_blank" class="social-btn whatsapp"><i class="fa-brands fa-whatsapp"></i> مجتمع الواتساب</a>
         </div>
 
-        <p class="copyright">جميع الحقوق محفوظة &copy; 2026 براند رونق للعطور</p>
+        <p class="copyright">جميع الحقوق محفوظة &copy; 2026 رونق للعطور</p>
     </footer>
 
     <script>
