@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -163,22 +164,33 @@
             padding-bottom: 8px;
         }
 
+        /* تعديلات الجداول لضمان وضوح الأحجام والنصوص */
         .price-table {
             width: 100%;
             border-collapse: collapse;
             text-align: right;
-        }
-
-        .price-table th, .price-table td {
-            padding: 10px 12px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            font-size: 15px;
-            color: #ffffff; /* تم توضيح لون النص ليشاهد بوضوح */
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         .price-table th {
+            background-color: #222222;
             color: var(--primary);
             font-weight: 700;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .price-table td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 15px;
+            color: #ffffff !important; /* إجبار ظهور نص الأحجام باللون الأبيض الصريح */
+        }
+
+        .price-table tr:hover {
+            background-color: rgba(212, 175, 55, 0.05);
         }
 
         .price-highlight {
