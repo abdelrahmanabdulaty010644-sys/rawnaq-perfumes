@@ -164,7 +164,7 @@
             padding-bottom: 8px;
         }
 
-        /* تعديلات الجداول لضمان وضوح الأحجام والنصوص */
+        /* تعديل الجدول ليكون كل النص (الحجم والسعر) باللون الذهبي الواضح */
         .price-table {
             width: 100%;
             border-collapse: collapse;
@@ -186,16 +186,12 @@
             padding: 12px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             font-size: 15px;
-            color: #ffffff !important; /* إجبار ظهور نص الأحجام باللون الأبيض الصريح */
+            color: var(--primary) !important; /* لون ذهبي ناصع لكل الخانات */
+            font-weight: 600;
         }
 
         .price-table tr:hover {
-            background-color: rgba(212, 175, 55, 0.05);
-        }
-
-        .price-highlight {
-            color: var(--primary) !important;
-            font-weight: 700;
+            background-color: rgba(212, 175, 55, 0.08);
         }
 
         /* Products Section & Filters */
@@ -399,13 +395,13 @@
                         <tr><th>الفئة / الحجم</th><th>السعر</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>تستر 5 مل</td><td class="price-highlight">25 ج.م</td></tr>
-                        <tr><td>تستر 10 مل</td><td class="price-highlight">40 ج.م</td></tr>
-                        <tr><td>زجاجة تعبان 30 مل</td><td class="price-highlight">80 ج.م</td></tr>
-                        <tr><td>زجاجة تعبان 50 مل</td><td class="price-highlight">150 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 30 مل</td><td class="price-highlight">150 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 50 مل</td><td class="price-highlight">250 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 100 مل</td><td class="price-highlight">350 ج.م</td></tr>
+                        <tr><td>تستر 5 مل</td><td>25 ج.م</td></tr>
+                        <tr><td>تستر 10 مل</td><td>40 ج.م</td></tr>
+                        <tr><td>زجاجة تعبان 30 مل</td><td>80 ج.م</td></tr>
+                        <tr><td>زجاجة تعبان 50 مل</td><td>150 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 30 مل</td><td>150 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 50 مل</td><td>250 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 100 مل</td><td>350 ج.م</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -417,13 +413,13 @@
                         <tr><th>الفئة / الحجم</th><th>السعر</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>تستر 5 مل</td><td class="price-highlight">30 ج.م</td></tr>
-                        <tr><td>تستر 10 مل</td><td class="price-highlight">50 ج.م</td></tr>
-                        <tr><td>زجاجة تعبان 30 مل</td><td class="price-highlight">200 ج.م</td></tr>
-                        <tr><td>زجاجة تعبان 50 مل</td><td class="price-highlight">300 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 30 مل</td><td class="price-highlight">250 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 50 مل</td><td class="price-highlight">350 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 100 مل</td><td class="price-highlight">500 ج.م</td></tr>
+                        <tr><td>تستر 5 مل</td><td>30 ج.م</td></tr>
+                        <tr><td>تستر 10 مل</td><td>50 ج.م</td></tr>
+                        <tr><td>زجاجة تعبان 30 مل</td><td>200 ج.م</td></tr>
+                        <tr><td>زجاجة تعبان 50 مل</td><td>300 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 30 مل</td><td>250 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 50 مل</td><td>350 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 100 مل</td><td>500 ج.م</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -435,10 +431,10 @@
                         <tr><th>الحجم</th><th>سعر القطعة</th><th>باكدج (5 قطع)</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>1.5 مل</td><td class="price-highlight">10 ج.م</td><td class="price-highlight">50 ج.م</td></tr>
-                        <tr><td>2.5 مل</td><td class="price-highlight">15 ج.م</td><td class="price-highlight">75 ج.م</td></tr>
-                        <tr><td>5 مل</td><td class="price-highlight">30 ج.م</td><td class="price-highlight">150 ج.م</td></tr>
-                        <tr><td>7 مل</td><td class="price-highlight">40 ج.م</td><td class="price-highlight">200 ج.م</td></tr>
+                        <tr><td>1.5 مل</td><td>10 ج.م</td><td>50 ج.م</td></tr>
+                        <tr><td>2.5 مل</td><td>15 ج.م</td><td>75 ج.م</td></tr>
+                        <tr><td>5 مل</td><td>30 ج.م</td><td>150 ج.م</td></tr>
+                        <tr><td>7 مل</td><td>40 ج.م</td><td>200 ج.م</td></tr>
                     </tbody>
                 </table>
             </div>
