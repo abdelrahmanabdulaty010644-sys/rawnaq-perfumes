@@ -194,13 +194,7 @@
             padding: 12px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             font-size: 15px;
-            color: var(--text-light);
-            font-weight: 600;
-        }
-
-        /* تم تحديد لون العمود الأول (الحجم/الفئة) باللون الذهبي */
-        .price-table td:first-child {
-            color: var(--primary) !important;
+            color: var(--primary); /* تم تعيين جميع نصوص الجداول باللون الذهبي */
             font-weight: 700;
         }
 
