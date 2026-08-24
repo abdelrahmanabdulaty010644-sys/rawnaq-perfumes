@@ -21,7 +21,7 @@
             --card-bg: #141414;
             --text-light: #ffffff;
             --text-muted: #b0b0b0;
-            --border-color: rgba(212, 175, 55, 0.3);
+            --border-color: rgba(212, 175, 55, 0.25);
         }
 
         * {
@@ -43,7 +43,7 @@
         header {
             background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(12px);
-            padding: 12px 5%;
+            padding: 12px 4%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -63,7 +63,7 @@
         }
 
         .brand-logo img {
-            height: 40px;
+            height: 45px;
             width: auto;
             border-radius: 6px;
         }
@@ -77,13 +77,14 @@
         nav {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: var(--text-light);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 15px;
             white-space: nowrap;
             transition: color 0.3s;
@@ -95,36 +96,36 @@
 
         /* Hero Section */
         .hero {
-            min-height: 75vh;
+            height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(180deg, rgba(10,10,10,0.8) 0%, rgba(10,10,10,0.98) 100%), 
+            background: linear-gradient(180deg, rgba(10,10,10,0.75) 0%, rgba(10,10,10,0.95) 100%), 
                         url('https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/WhatsApp%20Image%202026-08-24%20at%206.26.36%20PM.jpeg') center/cover no-repeat;
-            padding: 120px 20px 60px;
+            padding: 100px 20px 40px;
         }
 
         .hero-logo {
             width: 110px;
             height: auto;
             border-radius: 12px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
         }
 
         .hero h1 {
-            font-size: 42px;
+            font-size: 44px;
             font-weight: 800;
             color: var(--primary);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .hero p {
             font-size: 18px;
-            color: var(--text-muted);
-            max-width: 650px;
+            color: #e0e0e0;
+            max-width: 600px;
             margin-bottom: 25px;
         }
 
@@ -137,7 +138,7 @@
 
         .section-title {
             font-size: 32px;
-            font-weight: 800;
+            font-weight: 700;
             color: var(--primary);
             text-align: center;
             margin-bottom: 10px;
@@ -146,41 +147,43 @@
         .section-subtitle {
             color: var(--text-muted);
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             font-size: 16px;
         }
 
         .price-tables-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            gap: 25px;
         }
 
         .price-card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 14px;
-            padding: 22px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            border-radius: 12px;
+            padding: 20px;
         }
 
         .price-card h3 {
             color: var(--primary);
-            margin-bottom: 18px;
+            margin-bottom: 15px;
             text-align: center;
-            font-size: 19px;
+            font-size: 20px;
             border-bottom: 1px solid var(--border-color);
-            padding-bottom: 10px;
+            padding-bottom: 8px;
         }
 
         .price-table {
             width: 100%;
             border-collapse: collapse;
             text-align: right;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         .price-table th {
-            background-color: #1f1f1f;
+            background-color: #222222;
             color: var(--primary);
             font-weight: 700;
             padding: 12px;
@@ -191,45 +194,39 @@
             padding: 12px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             font-size: 15px;
-            color: #ffffff;
-            font-weight: 500;
+            color: var(--text-light);
+            font-weight: 600;
         }
 
-        .price-table td.price-val {
-            color: var(--primary);
+        /* تم تحديد لون العمود الأول (الحجم/الفئة) باللون الذهبي */
+        .price-table td:first-child {
+            color: var(--primary) !important;
             font-weight: 700;
         }
 
-        /* Products Section & Filters */
+        .price-table tr:hover {
+            background-color: rgba(212, 175, 55, 0.08);
+        }
+
+        /* Products Section & Category Headers */
         .products-section {
             padding: 60px 6%;
         }
 
-        .filter-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 40px;
+        .category-block {
+            margin-bottom: 50px;
         }
 
-        .filter-btn {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-light);
-            padding: 9px 20px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .filter-btn:hover, .filter-btn.active {
-            background: var(--primary);
-            color: #000;
-            border-color: var(--primary);
+        .category-header {
+            font-size: 24px;
             font-weight: 700;
+            color: var(--primary);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .grid {
@@ -240,7 +237,7 @@
 
         .card {
             background: var(--card-bg);
-            border-radius: 14px;
+            border-radius: 12px;
             padding: 20px;
             border: 1px solid var(--border-color);
             transition: all 0.3s ease;
@@ -252,14 +249,13 @@
         .card:hover {
             transform: translateY(-5px);
             border-color: var(--primary);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
         }
 
         .card img {
             width: 100%;
-            height: 250px;
+            height: 240px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 8px;
             margin-bottom: 15px;
         }
 
@@ -272,32 +268,23 @@
 
         .tag {
             font-size: 11px;
-            padding: 4px 10px;
+            padding: 3px 8px;
             border-radius: 12px;
             background: rgba(212, 175, 55, 0.15);
             color: var(--primary);
             border: 1px solid rgba(212, 175, 55, 0.3);
-            font-weight: 600;
         }
 
         .card h3 {
-            font-size: 20px;
+            font-size: 19px;
             margin-bottom: 6px;
-            color: #ffffff;
-        }
-
-        .card-category {
-            color: var(--primary);
-            font-size: 13px;
-            margin-bottom: 8px;
-            font-weight: 600;
         }
 
         .card-notes {
             font-size: 13px;
             color: var(--text-muted);
-            margin-bottom: 15px;
-            min-height: 40px;
+            margin-bottom: 12px;
+            min-height: 38px;
         }
 
         .card-price-info {
@@ -305,27 +292,24 @@
             color: var(--primary);
             font-weight: 700;
             margin-bottom: 15px;
-            background: rgba(0, 0, 0, 0.4);
-            padding: 10px;
-            border-radius: 8px;
+            background: rgba(0,0,0,0.3);
+            padding: 8px;
+            border-radius: 6px;
             text-align: center;
-            border: 1px solid rgba(212, 175, 55, 0.15);
         }
 
         .btn-card {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
+            display: block;
+            text-align: center;
             background: transparent;
             color: var(--primary);
             border: 1px solid var(--primary);
-            padding: 10px;
-            border-radius: 25px;
+            padding: 8px;
+            border-radius: 20px;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 600;
             font-size: 14px;
-            transition: all 0.3s;
+            transition: 0.3s;
         }
 
         .btn-card:hover {
@@ -336,69 +320,48 @@
         /* Footer */
         footer {
             background: #050505;
-            padding: 50px 20px 25px;
+            padding: 40px 20px 20px;
             text-align: center;
             border-top: 1px solid var(--border-color);
         }
 
         .footer-logo {
-            width: 80px;
+            width: 70px;
             height: auto;
-            border-radius: 8px;
-            margin-bottom: 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
         }
 
         .social-container {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 12px;
             flex-wrap: wrap;
-            margin: 25px 0;
+            margin: 20px 0;
         }
 
         .social-btn {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 10px 22px;
-            border-radius: 25px;
+            padding: 8px 18px;
+            border-radius: 20px;
             text-decoration: none;
             font-weight: 600;
             color: #fff;
-            font-size: 14px;
-            transition: opacity 0.3s;
-        }
-
-        .social-btn:hover {
-            opacity: 0.85;
+            font-size: 13px;
         }
 
         .facebook { background-color: #1877f2; }
         .whatsapp { background-color: #25d366; }
-        .tiktok { background-color: #000000; border: 1px solid #333; }
+        .tiktok { background-color: #000; border: 1px solid #333; }
         .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
 
         .copyright {
             color: var(--text-muted);
-            font-size: 14px;
+            font-size: 13px;
             border-top: 1px solid rgba(255,255,255,0.05);
-            padding-top: 20px;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                padding: 12px 3%;
-            }
-            nav {
-                gap: 10px;
-            }
-            nav a {
-                font-size: 13px;
-            }
-            .hero h1 {
-                font-size: 32px;
-            }
+            padding-top: 15px;
         }
     </style>
 </head>
@@ -436,31 +399,31 @@
                         <tr><th>الفئة / الحجم</th><th>السعر</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>تستر 5 مل</td><td class="price-val">25 ج.م</td></tr>
-                        <tr><td>تستر 10 مل</td><td class="price-val">40 ج.م</td></tr>
-                        <tr><td>زجاجة تعبان 30 مل</td><td class="price-val">80 ج.م</td></tr>
-                        <tr><td>زجاجة تعبان 50 مل</td><td class="price-val">150 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 30 مل</td><td class="price-val">150 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 50 مل</td><td class="price-val">250 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 100 مل</td><td class="price-val">350 ج.م</td></tr>
+                        <tr><td>تستر 5 مل</td><td>25 ج.م</td></tr>
+                        <tr><td>تستر 10 مل</td><td>40 ج.م</td></tr>
+                        <tr><td>زجاجة تعبان 30 مل</td><td>80 ج.م</td></tr>
+                        <tr><td>زجاجة تعبان 50 مل</td><td>150 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 30 مل</td><td>150 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 50 مل</td><td>250 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 100 مل</td><td>350 ج.م</td></tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="price-card">
-                <h3><i class="fa-solid fa-gem"></i> الإصدارات الخاصة</h3>
+                <h3><i class="fa-solid fa-gem"></i> الاصدارات الخاصة (عود مضاوي / خمرة / اربابورا)</h3>
                 <table class="price-table">
                     <thead>
                         <tr><th>الفئة / الحجم</th><th>السعر</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>تستر 5 مل</td><td class="price-val">30 ج.م</td></tr>
-                        <tr><td>تستر 10 مل</td><td class="price-val">50 ج.م</td></tr>
-                        <tr><td>زجاجة تعبان 30 مل</td><td class="price-val">200 ج.م</td></tr>
-                        <tr><td>زجاجة تعبان 50 مل</td><td class="price-val">300 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 30 مل</td><td class="price-val">250 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 50 مل</td><td class="price-val">350 ج.م</td></tr>
-                        <tr><td>زجاجة بريميوم 100 مل</td><td class="price-val">500 ج.م</td></tr>
+                        <tr><td>تستر 5 مل</td><td>30 ج.م</td></tr>
+                        <tr><td>تستر 10 مل</td><td>50 ج.م</td></tr>
+                        <tr><td>زجاجة تعبان 30 مل</td><td>200 ج.م</td></tr>
+                        <tr><td>زجاجة تعبان 50 مل</td><td>300 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 30 مل</td><td>250 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 50 مل</td><td>350 ج.م</td></tr>
+                        <tr><td>زجاجة بريميوم 100 مل</td><td>500 ج.م</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -472,10 +435,10 @@
                         <tr><th>الحجم</th><th>سعر القطعة</th><th>باكدج (5 قطع)</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>1.5 مل</td><td class="price-val">10 ج.م</td><td class="price-val">50 ج.م</td></tr>
-                        <tr><td>2.5 مل</td><td class="price-val">15 ج.م</td><td class="price-val">75 ج.م</td></tr>
-                        <tr><td>5 مل</td><td class="price-val">30 ج.م</td><td class="price-val">150 ج.م</td></tr>
-                        <tr><td>7 مل</td><td class="price-val">40 ج.م</td><td class="price-val">200 ج.م</td></tr>
+                        <tr><td>1.5 مل</td><td>10 ج.م</td><td>50 ج.م</td></tr>
+                        <tr><td>2.5 مل</td><td>15 ج.م</td><td>75 ج.م</td></tr>
+                        <tr><td>5 مل</td><td>30 ج.م</td><td>150 ج.م</td></tr>
+                        <tr><td>7 مل</td><td>40 ج.م</td><td>200 ج.م</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -484,29 +447,17 @@
 
     <!-- Products Catalog Section -->
     <section id="products" class="products-section">
-        <h2 class="section-title">كتالوج المنتجات الكامل</h2>
-        <p class="section-subtitle">اختر التصنيف أو النوع لعرض العطور والمسكات المناسبة</p>
+        <h2 class="section-title">كتالوج المنتجات التصنيفي</h2>
+        <p class="section-subtitle">جميع القوائم والتصنيفات معروضة بالكامل</p>
 
-        <!-- Filters -->
-        <div class="filter-container">
-            <button class="filter-btn active" data-filter="all">الكل</button>
-            <button class="filter-btn" data-filter="حريمي">عطور حريمي</button>
-            <button class="filter-btn" data-filter="رجالي">عطور رجالي</button>
-            <button class="filter-btn" data-filter="يونيسكس">يونيسكس</button>
-            <button class="filter-btn" data-filter="مسك">المسكات</button>
-            <button class="filter-btn" data-filter="شتوي">شتوي / دافئ</button>
-            <button class="filter-btn" data-filter="صيفي">صيفي / فريش</button>
-            <button class="filter-btn" data-filter="شوغري">شوغري / غورماند</button>
-        </div>
-
-        <div class="grid" id="products-grid">
-            <!-- JS dynamic content injection -->
+        <div id="products-lists">
+            <!-- JS dynamic full lists injection -->
         </div>
     </section>
 
     <footer id="contact">
         <img src="https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/Screenshot%202026-08-24%20200345.png" alt="لوجو رونق" class="footer-logo">
-        <h3>تواصل معنا واطلب الآن</h3>
+        <h3>تابع رونق على منصات التواصل</h3>
         
         <div class="social-container">
             <a href="https://www.facebook.com/share/1bGxj2MaW6/" target="_blank" class="social-btn facebook"><i class="fa-brands fa-facebook-f"></i> فيسبوك</a>
@@ -537,48 +488,56 @@
             { name: "مسك كعبه", type: "يونيسكس", season: "كل المواسم", category: "مسكي • بودري • نظيف", notes: "مسك أسود فاخر بنفحات شرقية روحانية مميزة", price: "رول مسك من 10 ج.م / زجاجات من 80 ج.م", image: "https://raw.githubusercontent.com/abdelrahmanabdulaty010644-sys/rawnaq-perfumes/main/WhatsApp%20Image%202026-08-24%20at%206.26.36%20PM%20(1).jpeg", group: ["مسك", "شتوي"] }
         ];
 
-        function renderProducts(items) {
-            const grid = document.getElementById('products-grid');
-            grid.innerHTML = items.map(item => `
-                <div class="card">
-                    <div>
-                        <img src="${item.image}" alt="${item.name}">
-                        <div class="card-tags">
-                            <span class="tag">${item.type}</span>
-                            <span class="tag">${item.season}</span>
+        const categories = [
+            { title: "عطور حريمي", filterKey: "حريمي", icon: "fa-venus" },
+            { title: "عطور رجالي", filterKey: "رجالي", icon: "fa-mars" },
+            { title: "عطور يونيسكس", filterKey: "يونيسكس", icon: "fa-genderless" },
+            { title: "تشكيلة المسكات", filterKey: "مسك", icon: "fa-bottle-droplet" },
+            { title: "عطور شتوية / دافئة", filterKey: "شتوي", icon: "fa-snowflake" },
+            { title: "عطور صيفية / فريش", filterKey: "صيفي", icon: "fa-sun" },
+            { title: "عطور شوغري / غورماند", filterKey: "شوغري", icon: "fa-cookie-bite" }
+        ];
+
+        function renderAllCategories() {
+            const container = document.getElementById('products-lists');
+            container.innerHTML = categories.map(cat => {
+                const items = productsData.filter(item => item.group.includes(cat.filterKey) || item.type.includes(cat.filterKey));
+                if (items.length === 0) return '';
+
+                const cardsHTML = items.map(item => `
+                    <div class="card">
+                        <div>
+                            <img src="${item.image}" alt="${item.name}">
+                            <div class="card-tags">
+                                <span class="tag">${item.type}</span>
+                                <span class="tag">${item.season}</span>
+                            </div>
+                            <h3>${item.name}</h3>
+                            <p style="color: var(--primary); font-size: 12px; margin-bottom: 6px;">${item.category}</p>
+                            <p class="card-notes">${item.notes}</p>
                         </div>
-                        <h3>${item.name}</h3>
-                        <div class="card-category">${item.category}</div>
-                        <p class="card-notes">${item.notes}</p>
+                        <div>
+                            <div class="card-price-info">${item.price}</div>
+                            <a href="https://chat.whatsapp.com/Ett4jGXBrtl2retP8XNy4X?s=sh&p=a&ilr=0&amv=0" target="_blank" class="btn-card">
+                                <i class="fa-brands fa-whatsapp"></i> اطلب الآن
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <div class="card-price-info">${item.price}</div>
-                        <a href="https://chat.whatsapp.com/Ett4jGXBrtl2retP8XNy4X?s=sh&p=a&ilr=0&amv=0" target="_blank" class="btn-card">
-                            <i class="fa-brands fa-whatsapp"></i> اطلب الآن
-                        </a>
+                `).join('');
+
+                return `
+                    <div class="category-block">
+                        <h3 class="category-header"><i class="fa-solid ${cat.icon}"></i> ${cat.title}</h3>
+                        <div class="grid">
+                            ${cardsHTML}
+                        </div>
                     </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
         }
 
-        // Add Click listeners for filters
-        document.querySelectorAll('.filter-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-
-                const filter = this.getAttribute('data-filter');
-                if (filter === 'all') {
-                    renderProducts(productsData);
-                } else {
-                    const filtered = productsData.filter(item => item.group.includes(filter) || item.type.includes(filter));
-                    renderProducts(filtered);
-                }
-            });
-        });
-
         // Initial Load
-        renderProducts(productsData);
+        renderAllCategories();
     </script>
 </body>
 </html>
